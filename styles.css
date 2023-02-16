@@ -37,7 +37,7 @@ body {
 .banner {
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 70vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("./img/1aaf29fec168a8356af6a7adc7974f9b.jpg");
     border-radius: 20px;
@@ -216,16 +216,23 @@ body {
 
 /*se agregaron unas lineas de css con media querys para que se adapte mejor al responsive :)*/
 
-@media only screen and (max-width: 750px) {
+@media (max-width: 450px) {
     .modal-container {
       width: 100%;
       margin: 0;
       min-height: 88vh;
     }
-  
+
+   
+
+      .navbar-logo {
+      font-size: 150%;
+      padding-right: 9%;
+      }
+    
     .modal-container > .modal-content {
       justify-content: space-between;
-      width: 100%;
+      width: 80%;
       margin: 2px;
     }
   
@@ -233,4 +240,5 @@ body {
       height: 80px;
       width: 80px;
     }
+
   }
