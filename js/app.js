@@ -39,8 +39,8 @@ data.forEach((product) => {
          
         },
         offset:{
-          x: 1200, // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-          y: 650 // vertical axis - can be a number or a string indicating unity. eg: '2em'
+          x: 280, // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+          y: 70 // vertical axis - can be a number or a string indicating unity. eg: '2em'
         },
       }).showToast();
      
