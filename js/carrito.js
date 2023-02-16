@@ -70,13 +70,24 @@ const pintarCarrito = () => {
     
     });
   
-    const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
   
+    const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
+    
     const totalBuying = document.createElement("div");
     totalBuying.className = "total-content";
     totalBuying.innerHTML = `Total a pagar: ${total} $`;
     modalContainer.append(totalBuying);
-
+    totalBuying.addEventListener("click", () => {
+        Swal.fire({
+            title: `Su compra por el monto ${total}$ fue exitosa!`,
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+          })
+    });
 
   };
 
